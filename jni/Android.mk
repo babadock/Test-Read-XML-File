@@ -7,7 +7,7 @@ include $(CLEAR_VARS)
 #OPENCV_LIB_TYPE:=SHARED
 include ../../sdk/native/jni/OpenCV.mk
 
-LOCAL_SRC_FILES  := FileStorage-jni.h
+LOCAL_SRC_FILES  := FileStorage-jni.cpp
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_LDLIBS     += -llog -ldl
 

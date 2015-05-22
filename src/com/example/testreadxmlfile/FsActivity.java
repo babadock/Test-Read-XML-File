@@ -15,15 +15,16 @@ public class FsActivity extends ActionBarActivity {
 		public void onManagerConnected(int status) {
 			switch (status) {
 			case LoaderCallbackInterface.SUCCESS: {
-				Log.i(TAG, "OpenCV loaded successfully");
+
 				System.loadLibrary("filestorage");
 
-				//String dirname = Environment.getExternalStorageDirectory();
-				
+				// String dirname = Environment.getExternalStorageDirectory();
+
 				// String path =
+				Log.i(TAG, "OpenCV loaded successfully");
 				fs = new FileStorage();
-				//fs.CalcFeatures("test.xml");
-				fs.SayHello();
+				fs.CalcFeatures("test.xml");
+				//fs.SayHello();
 			}
 				break;
 			default: {
