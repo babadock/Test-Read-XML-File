@@ -1,0 +1,2 @@
+set solib-search-path ./obj/local/x86
+directory E:/android-ndk-r8e/platforms/android-9/arch-x86/usr/include ../../sdk/native/jni/include/opencv ../../sdk/native/jni/include E:/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++
