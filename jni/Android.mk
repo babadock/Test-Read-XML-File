@@ -7,11 +7,11 @@ include $(CLEAR_VARS)
 #OPENCV_LIB_TYPE:=SHARED
 include ../../sdk/native/jni/OpenCV.mk
 
-LOCAL_SRC_FILES  := DetectionBasedTracker-jni.cpp
+LOCAL_SRC_FILES  := FileStorage-jni.h
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
 LOCAL_LDLIBS     += -llog -ldl
 
-LOCAL_MODULE     := detection_based_tracker
+LOCAL_MODULE     := filestorage
 APP_OPTIM := debug
 
 include $(BUILD_SHARED_LIBRARY)
