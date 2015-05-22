@@ -25,7 +25,8 @@ JNIEXPORT void JNICALL Java_com_example_testreadxmlfile_FileStorage_nativeCalcFe
 
 	//LOGD("fs.state: %d ,"fs.state);
 	int foo = 42;
-	LOGI("foo is %d", fs.state);
+	//LOGI("foo is %d", fs.state);
+	LOGI("foo is %d", fs.isOpened());
 
 	//__android_log_print(ANDROID_LOG_INFO, "SomeTag", "foo is %d", foo);
 	//fs << "frameCount" << 5;
