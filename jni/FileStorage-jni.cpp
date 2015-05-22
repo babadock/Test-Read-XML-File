@@ -26,12 +26,12 @@ JNIEXPORT void JNICALL Java_com_example_testreadxmlfile_FileStorage_nativeCalcFe
 			LOGI("Can't open file: %s ", filepath.c_str());
 		}
 
-		Mat M;
+		Mat mean;
 
 		LOGD("READ BEGING !!!");
-		fs["M"] >> M;
+		fs["mean"] >> mean;
 
-		LOGI("%d , %d\n", M.rows, M.cols);
+		LOGI("%d , %d\n", mean.rows, mean.cols);
 
 		LOGD("READ ENDED !!!");
 	}
